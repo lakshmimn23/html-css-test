@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-bg: #000;
+    --font-color: #fff;
+    --green : #08ad6e;
+}
+body{
+    margin: 0;
+    padding:0;
+    overflow-x: hidden;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--font-color);
+    width: 100%;
+}
+
+header input[type ="checkbox"],
+header .hamberger-menu{
+    display: none;
+}
+header nav {
+    display: flex;
+    height: 60px;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 14px;
+}
+
+.navbar .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.1em;    
+}
+
+ul li{
+    list-style-type: none;
+    padding: 10px 12px;
+}
+ul li a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-weight: 500;
+    
+}
+
+.selected {
+    color: var(--green);
+}
+
+.btn-group {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-group .btn{
+    padding: 6px 18px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    
+}
+
+.signup{
+    background-color: var(--dark-bg);
+    border: 1px solid var(--green);
+    color: var(--font-color);
+}
+
+.login {
+    background-color: var(--green);
+    border: 1px solid var(--green);
+    color: var(--font-color);
+}
+
+/* banner section */
+
+section {
+    height: 100vh;
+}
+
+section .container {
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.conatiner .content {
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+.banner .content {
+    padding: 10rem;
+}
+.left-bg{
+    
+    width: 350px;
+    height: 500px;
+    background: linear-gradient(to bottom right, #000, #666, #000)
+               
+       }
+
+.content .title{
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+p span{
+    color: var(--green);
+}
+
+.container .content .txt {
+    
+    font-size: 1.1em;
+    
+}
+
+.title .font-bg {
+    background-color: var(--green);
+}
+
+/* About section */
+
+.about {
+    position: relative;
+    margin-top: 6rem;
+}
+.about .left-bg{
+    position: absolute;
+    right: 0;
+    width: 350px;
+    height: 500px;
+    background: linear-gradient(to bottom right, #000, #666, #000)
+               
+       }
+
+.about .left-bg img {
+    position: absolute;
+    top: 80px;
+    left: -200px;
+}
+
+.about .content {
+    margin-left: 5rem;
+}
+
+
+/* finance section */
+.finance .conatiner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.finance .content {
+    padding-left: 50rem;
+}
+.finance .left-bg {
+    position: absolute;
+    left: 0;
+    width: 350px;
+    height: 500px;
+    background: linear-gradient(to bottom right, #000, #666, #000)
+}
+
+.finance .left-bg img {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    
+}
+
+/* subscribe  */
+.subscribe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.subscribe .container {
+    padding-bottom: 100px;
+}
+
+form{
+    width: 100%;
+}
+
+form input {
+    width: 500px;
+    padding: 14px 14px;
+    border-radius: 5px;
+    border: none;
+}
+.h1color {
+    color: var(--green);
+}
+form .subs {
+    padding: 12px 12px;
+    background-color: var(--green);
+    color: var(--font-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+/* testimonials */
+
+.testimonial {
+    position: relative;
+    width: 100%;
+    padding: 0 5rem;
+}
+
+.testimonial .container {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.card {
+    background-color: #666;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+}
+.card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid var(--green);
+}
+
+.card a{
+    color: var(--green);
+}
+
+/* Footer  */
+
+footer .container {
+    position: relative;
+    width: 100%;
+    padding: 25rem 7rem 5rem 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 1rem;
+}
+.fmenu {
+    text-align: left;
+}
+
+.fmenu ul{
+    padding: 0;
+}
+
+.fmenu ul li {
+    padding: 10px 0 10px;
+}
+
+footer h1 span{
+    color: var(--green);
+}
